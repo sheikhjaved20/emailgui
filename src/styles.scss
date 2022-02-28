@@ -1,1 +1,57 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+
+  background-color: #eee;
+}
+.main-container {
+  text-align: center;
+  padding: 20px 0px;
+  max-width: 600px;
+  margin: 0 auto;
+  h1 {
+    color: #ff4081;
+    font-weight: 700;
+  }
+  .card {
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    .field {
+      width: 100%;
+    }
+    .btnwrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      grid-column-gap: 15px;
+      position: relative;
+      .spinnerblock {
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        height: 50px;
+        position: absolute;
+        z-index: 1;
+        background-color: rgba(255, 255, 255, 0.7);
+      }
+    }
+  }
+}
+@media screen and (max-width: 980px) {
+  .main-container {
+    max-width: 100%;
+    padding: 15px;
+  }
+}
