@@ -4,7 +4,6 @@
             Compose Email
         </h1>
         <form (ngSubmit)="doSubmitForm()">
-            {{ data | json }}
             <mat-form-field class="field" appearance="outline">
                 <mat-label>To</mat-label>
                 <input name="to" [(ngModel)]="data.to" matInput>
